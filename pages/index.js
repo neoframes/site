@@ -56,7 +56,12 @@ export default function Home() {
           </h2>
           <div className="grid gap-12 px-10 md:grid-cols-2 lg:grid-cols-3 lg:px-0">
             <div>
-              <Image src="/cash.svg" height={60} width={60} alt="affordable" />
+              <Image
+                src="/money-wallet.svg"
+                height={60}
+                width={60}
+                alt="affordable"
+              />
               <p className="mb-3 font-medium text-gray-900">
                 Affordable Pricing
               </p>
@@ -67,7 +72,7 @@ export default function Home() {
             <div>
               <Image src="/badge.svg" height={60} width={60} alt="affordable" />
               <p className="mb-3 font-medium text-gray-900">
-                Experience Architects
+                Experienced Architects
               </p>
               <p className="text-sm text-gray-700">
                 Affordable pricing pricing photo pricing price{' '}
@@ -102,7 +107,7 @@ export default function Home() {
                 alt="affordable"
               />
               <p className="mb-3 font-medium text-gray-900">
-                Professional designs
+                Professional Designs
               </p>
               <p className="text-sm text-gray-700">
                 Affordable pricing pricing photo pricing price{' '}
@@ -120,7 +125,56 @@ export default function Home() {
         </section>
       </main>
 
-      <footer></footer>
+      <footer className="bg-orange-100">
+        <section className="justify-items-center-center container grid gap-7 pt-10 pb-14 md:grid-cols-2 lg:grid-cols-3">
+          <div className="px-10 lg:px-0">
+            <p className="font-semi-bold mb-3">Site</p>
+            <ul className="grid gap-3">
+              <li className="text-sm font-light">Home</li>
+              <li className="text-sm font-light">Features</li>
+              <li className="text-sm font-light">Showcase</li>
+            </ul>
+          </div>
+          <div className="px-10 lg:px-0">
+            <p className="font-semi-bold mb-3">Company</p>
+            <ul className="grid gap-3">
+              <li className="text-sm font-light">About</li>
+            </ul>
+          </div>
+          <div className="px-10 lg:px-0">
+            <p className="font-semi-bold mb-3">Contact Us</p>
+            <ul className="grid gap-3">
+              <li className="flex items-center gap-2 text-sm font-light">
+                <Image
+                  src="/whatsapp.svg"
+                  height={20}
+                  width={20}
+                  alt="affordable"
+                />
+                <span>+91 9876543210</span>
+              </li>
+              <li className="flex items-center gap-2 text-sm font-light">
+                <Image
+                  src="/email.svg"
+                  height={20}
+                  width={20}
+                  alt="affordable"
+                />
+                <span>neoframesarchitectstudio@gmail.com</span>
+              </li>
+              <li className="flex items-center gap-2 text-sm font-light">
+                <Image
+                  src="/instagram.svg"
+                  height={20}
+                  width={20}
+                  alt="affordable"
+                />
+                <span>@neoframes</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </footer>
     </div>
   );
 }
