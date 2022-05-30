@@ -1,7 +1,9 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import { useRef } from 'react';
 
 export default function Home() {
+  const formRef = useRef();
   return (
     <div>
       <Head>
@@ -34,7 +36,7 @@ export default function Home() {
             </div>
           </nav>
 
-          <div className="container mt-48 lg:mt-36">
+          <div className="container mt-40 lg:mt-36 ">
             <h1
               className="inline-block rounded-sm bg-gray-800/50 p-5 text-3xl font-medium text-white backdrop-blur lg:bg-white/20 lg:py-10 lg:text-5xl"
               style={{
@@ -43,10 +45,24 @@ export default function Home() {
             >
               One stop solution for
               <br />
-              <span className="mt-2 inline-block text-green-500 lg:mt-4">
+              <span className="mt-2 inline-block text-white lg:mt-4">
                 complete building services
               </span>
             </h1>
+
+            <div className=" mt-8 lg:mt-20">
+              <button
+                onClick={() => {
+                  formRef.current.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start',
+                  });
+                }}
+                className="max-w-lg items-stretch rounded-sm bg-orange-600  px-12 py-3 text-xl font-semibold text-white"
+              >
+                Book Free Consult
+              </button>
+            </div>
           </div>
         </section>
 
@@ -70,7 +86,12 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <Image src="/badge.svg" height={60} width={60} alt="affordable" />
+              <Image
+                src="/badge.svg"
+                height={60}
+                width={60}
+                alt="experienced"
+              />
               <p className="mb-3 font-medium text-gray-900">
                 Experienced Architects
               </p>
@@ -83,7 +104,7 @@ export default function Home() {
                 src="/engineer.svg"
                 height={60}
                 width={60}
-                alt="affordable"
+                alt="engineer"
               />
               <p className="mb-3 font-medium text-gray-900">
                 Civil & Architectural Drawings
@@ -93,19 +114,14 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <Image src="/time.svg" height={60} width={60} alt="affordable" />
+              <Image src="/time.svg" height={60} width={60} alt="on-time" />
               <p className="mb-3 font-medium text-gray-900">On-Time Delivery</p>
               <p className="text-sm text-gray-700">
                 Affordable pricing pricing photo pricing price{' '}
               </p>
             </div>
             <div>
-              <Image
-                src="/design.svg"
-                height={60}
-                width={60}
-                alt="affordable"
-              />
+              <Image src="/design.svg" height={60} width={60} alt="design" />
               <p className="mb-3 font-medium text-gray-900">
                 Professional Designs
               </p>
@@ -115,7 +131,7 @@ export default function Home() {
             </div>
 
             <div>
-              <Image src="/3d.svg" height={60} width={60} alt="affordable" />
+              <Image src="/building.svg" height={60} width={60} alt="3d" />
               <p className="mb-3 font-medium text-gray-900">3D Rendering</p>
               <p className="text-sm text-gray-700">
                 Affordable pricing pricing photo pricing price{' '}
@@ -124,6 +140,51 @@ export default function Home() {
           </div>
         </section>
       </main>
+
+      {/* form */}
+
+      <section ref={formRef} className="container my-20 py-4">
+        <div className="px-5 lg:px-0">
+          <div className="flex justify-center">
+            <h1 className="text-4xl font-semibold">
+              Bring your dream house to life!
+            </h1>
+          </div>
+          <div className="flex justify-center">
+            <h2 className=" my-6 text-xl font-medium">
+              Book a consultation with our Professional Architects. It&apos;s
+              <span className="text-orange-600"> completely free!</span>
+            </h2>
+          </div>
+          <form>
+            <div className="flex flex-col items-center">
+              <div className="">
+                <label
+                  htmlFor="phone"
+                  className=" rounded-tl-sm rounded-bl-sm   py-5 text-center text-sm text-gray-700 "
+                >
+                  Mobile Number
+                </label>
+                <br />
+                <input
+                  type="text"
+                  maxLength={10}
+                  minLength={10}
+                  placeholder="Eg: 9876543210"
+                  required
+                  className="rounded-sm border-2 p-3 hover:ring-1 hover:ring-orange-600 focus:outline-none"
+                />
+              </div>
+
+              <button className="m-4 max-w-lg items-stretch rounded-sm bg-orange-600  px-12 py-3 text-xl font-semibold text-white">
+                Book Free Consult
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      {/* footer */}
 
       <footer className="bg-orange-100">
         <section className="justify-items-center-center container grid gap-7 pt-10 pb-14 md:grid-cols-2 lg:grid-cols-3">
@@ -149,17 +210,12 @@ export default function Home() {
                   src="/whatsapp.svg"
                   height={20}
                   width={20}
-                  alt="affordable"
+                  alt="whatsapp"
                 />
                 <span>+91 9876543210</span>
               </li>
               <li className="flex items-center gap-2 text-sm font-light">
-                <Image
-                  src="/email.svg"
-                  height={20}
-                  width={20}
-                  alt="affordable"
-                />
+                <Image src="/email.svg" height={20} width={20} alt="email" />
                 <span>neoframesarchitectstudio@gmail.com</span>
               </li>
               <li className="flex items-center gap-2 text-sm font-light">
@@ -167,7 +223,7 @@ export default function Home() {
                   src="/instagram.svg"
                   height={20}
                   width={20}
-                  alt="affordable"
+                  alt="instagram"
                 />
                 <span>@neoframes</span>
               </li>
