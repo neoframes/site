@@ -156,7 +156,10 @@ export default function Home() {
               <span className="text-orange-600"> completely free!</span>
             </h2>
           </div>
-          <form>
+          <form
+            action="https://formsubmit.co/neoframesarchitectstudio@gmail.com"
+            method="POST"
+          >
             <div className="flex flex-col items-center">
               <div className="">
                 <label
@@ -168,11 +171,23 @@ export default function Home() {
                 <br />
                 <input
                   type="text"
+                  name="mobile"
                   maxLength={10}
                   minLength={10}
                   placeholder="Eg: 9876543210"
                   required
                   className="rounded-sm border-2 p-3 hover:ring-1 hover:ring-orange-600 focus:outline-none"
+                />
+                <input type="hidden" name="_template" value="table" />
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="Consultation Request"
+                />
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://neoframes.netlify.app"
                 />
               </div>
 
