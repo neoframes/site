@@ -29,24 +29,22 @@ export default function Home() {
           <div className="absolute top-0 left-0 -z-20 h-4/5 w-full overflow-hidden bg-[url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=80')] bg-cover bg-right bg-no-repeat lg:h-screen"></div>
           {/* <div className="absolute top-0 left-0 -z-20 h-3/5 w-full overflow-hidden bg-[url('https://images.unsplash.com/photo-1613575831056-0acd5da8f085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')] bg-cover bg-right bg-no-repeat lg:h-screen"></div> */}
 
-          <nav className="container flex justify-between pt-8">
+          <nav className="container flex items-center justify-between pt-8">
             <div className="text-2xl font-medium text-white">Neoframes</div>
-            <div>
-              <button className="text-md text-gray-100">Contact Us</button>
-            </div>
+            <div className="text-md text-gray-100">The Architect Studio</div>
           </nav>
 
-          <div className="container mt-40 lg:mt-36 ">
+          <div className="container mt-24 lg:mt-36 ">
             <h1
-              className="inline-block rounded-sm bg-gray-800/50 p-5 text-3xl font-medium text-white backdrop-blur lg:bg-white/20 lg:py-10 lg:text-5xl"
+              className="inline-block rounded-sm bg-gray-800/50 p-5 text-2xl font-medium text-white backdrop-blur lg:bg-white/20 lg:py-10 lg:text-5xl"
               style={{
                 textShadow: ' 0 0 50px hsla(0, 0%, 0%, .4)',
               }}
             >
-              One stop solution for
+              Trusted & Efficient Architects,
               <br />
               <span className="mt-2 inline-block text-white lg:mt-4">
-                complete building services
+                Building your Dream spaces.
               </span>
             </h1>
 
@@ -58,7 +56,7 @@ export default function Home() {
                     block: 'start',
                   });
                 }}
-                className="max-w-lg items-stretch rounded-sm bg-orange-600  px-12 py-3 text-xl font-semibold text-white"
+                className="max-w-lg items-stretch rounded-sm bg-orange-600  px-12 py-3 text-base font-semibold text-white lg:text-xl"
               >
                 Book Free Consult
               </button>
@@ -81,8 +79,8 @@ export default function Home() {
               <p className="mb-3 font-medium text-gray-900">
                 Affordable Pricing
               </p>
-              <p className="text-sm text-gray-700">
-                Affordable pricing pricing photo pricing price{' '}
+              <p className="text-sm  text-gray-700">
+                Build your dream projects without the burden on your pocket
               </p>
             </div>
             <div>
@@ -96,7 +94,7 @@ export default function Home() {
                 Experienced Architects
               </p>
               <p className="text-sm text-gray-700">
-                Affordable pricing pricing photo pricing price{' '}
+                Architects from top notch institutions with 100+ projects
               </p>
             </div>
             <div>
@@ -110,14 +108,14 @@ export default function Home() {
                 Civil & Architectural Drawings
               </p>
               <p className="text-sm text-gray-700">
-                Affordable pricing pricing photo pricing price{' '}
+                Free unlimited concept plans and architectural consultation
               </p>
             </div>
             <div>
               <Image src="/time.svg" height={60} width={60} alt="on-time" />
               <p className="mb-3 font-medium text-gray-900">On-Time Delivery</p>
               <p className="text-sm text-gray-700">
-                Affordable pricing pricing photo pricing price{' '}
+                Guaranteed delivery of your project within the stipulated time.
               </p>
             </div>
             <div>
@@ -126,7 +124,7 @@ export default function Home() {
                 Professional Designs
               </p>
               <p className="text-sm text-gray-700">
-                Affordable pricing pricing photo pricing price{' '}
+                Pixel perfect designs with detailed drawings
               </p>
             </div>
 
@@ -134,7 +132,8 @@ export default function Home() {
               <Image src="/building.svg" height={60} width={60} alt="3d" />
               <p className="mb-3 font-medium text-gray-900">3D Rendering</p>
               <p className="text-sm text-gray-700">
-                Affordable pricing pricing photo pricing price{' '}
+                Get instant 3D modelling and high quality photo-realistic
+                renders
               </p>
             </div>
           </div>
@@ -215,11 +214,25 @@ export default function Home() {
             <p className="font-semi-bold mb-3">Company</p>
             <ul className="grid gap-3">
               <li className="text-sm font-light">About</li>
+              <li className="text-sm font-light">
+                <span className="mb-2 flex items-center">
+                  <span className="font-medium">Find us at</span>
+                  <Image
+                    src="/location.svg"
+                    height={20}
+                    width={20}
+                    alt="location"
+                  />
+                </span>
+                Lodha meridinan block-b 1807, <br />
+                KPHB Phase 5, <br />
+                Hyderabad - 500082.
+              </li>
             </ul>
           </div>
           <div className="px-10 lg:px-0">
             <p className="font-semi-bold mb-3">Contact Us</p>
-            <ul className="grid gap-3">
+            <ul className="grid gap-4">
               <li className="flex items-center gap-2 text-sm font-light">
                 <Image
                   src="/whatsapp.svg"
@@ -227,11 +240,13 @@ export default function Home() {
                   width={20}
                   alt="whatsapp"
                 />
-                <span>+91 9876543210</span>
+                <a href="tel:+91-7306666643">+91-7306666643</a>
               </li>
               <li className="flex items-center gap-2 text-sm font-light">
                 <Image src="/email.svg" height={20} width={20} alt="email" />
-                <span>neoframesarchitectstudio@gmail.com</span>
+                <a href="mailto:neoframesarchitectstudio@gmail.com">
+                  neoframesarchitectstudio@gmail.com
+                </a>
               </li>
               <li className="flex items-center gap-2 text-sm font-light">
                 <Image
@@ -240,7 +255,13 @@ export default function Home() {
                   width={20}
                   alt="instagram"
                 />
-                <span>@neoframes</span>
+                <a
+                  href="https://www.instagram.com/neo_framess"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  @neo_framess
+                </a>
               </li>
             </ul>
           </div>
