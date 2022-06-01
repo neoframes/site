@@ -140,6 +140,124 @@ export default function Home() {
         </section>
       </main>
 
+      {/* gallery */}
+
+      <section className="container mb-10">
+        <h2 className="mb-10 text-center text-3xl">
+          Our <span className="text-orange-600">Gallery</span>
+        </h2>
+        <div className="grid grid-rows-3 gap-4 px-10 md:grid-cols-2 lg:grid-cols-3 lg:px-0">
+          <div>
+            <Image
+              src="/gallery/1.jpg"
+              layout="responsive"
+              height={`100vh`}
+              width={`100vw`}
+              alt="gallery"
+            />
+          </div>
+          <div>
+            <Image
+              src="/gallery/2.jpg"
+              layout="responsive"
+              height={`100vh`}
+              width={`100vw`}
+              alt="gallery"
+            />
+          </div>
+          <div>
+            <Image
+              src="/gallery/3.jpg"
+              layout="responsive"
+              height={`100vh`}
+              width={`100vw`}
+              alt="gallery"
+            />
+          </div>
+          <div>
+            <Image
+              src="/gallery/4.jpg"
+              layout="responsive"
+              height={`100vh`}
+              width={`100vw`}
+              alt="gallery"
+            />
+          </div>
+          <div>
+            <Image
+              src="/gallery/5.jpg"
+              layout="responsive"
+              height={`100vh`}
+              width={`100vw`}
+              alt="gallery"
+            />
+          </div>
+          <div>
+            <Image
+              src="/gallery/6.jpg"
+              layout="responsive"
+              height={`100vh`}
+              width={`100vw`}
+              alt="gallery"
+            />
+          </div>
+          <div>
+            <Image
+              src="/gallery/7.jpg"
+              layout="responsive"
+              height={`100vh`}
+              width={`100vw`}
+              alt="gallery"
+            />
+          </div>
+          <div>
+            <Image
+              src="/gallery/8.jpg"
+              layout="responsive"
+              height={`100vh`}
+              width={`100vw`}
+              alt="gallery"
+            />
+          </div>
+          <div>
+            <Image
+              src="/gallery/9.jpg"
+              layout="responsive"
+              height={`100vh`}
+              width={`100vw`}
+              alt="gallery"
+            />
+          </div>
+          <div>
+            <Image
+              src="/gallery/10.jpg"
+              layout="responsive"
+              height={`100vh`}
+              width={`100vw`}
+              alt="gallery"
+            />
+          </div>
+          <div>
+            <Image
+              src="/gallery/11.jpg"
+              layout="responsive"
+              height={`100vh`}
+              width={`100vw`}
+              alt="gallery"
+            />
+          </div>
+          <div>
+            <Image
+              src="/gallery/12.jpg"
+              layout="responsive"
+              height={`100vh`}
+              width={`100vw`}
+              alt="gallery"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* form */}
 
       <section ref={formRef} className="container my-20 py-4">
