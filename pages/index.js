@@ -168,7 +168,7 @@ export default function Home() {
         <div className="grid grid-rows-3 gap-4  md:grid-cols-2 lg:grid-cols-3 ">
           <div>
             <Image
-              src="/gallery/1.jpg"
+              src="https://res.cloudinary.com/neo-frames/image/upload/v1654117527/gallery/1_uu14fi.jpg"
               layout="responsive"
               height={`100vh`}
               width={`100vw`}
@@ -177,7 +177,7 @@ export default function Home() {
           </div>
           <div>
             <Image
-              src="/gallery/2.jpg"
+              src="https://res.cloudinary.com/neo-frames/image/upload/v1654117526/gallery/2_g3qnvw.jpg"
               layout="responsive"
               height={`100vh`}
               width={`100vw`}
@@ -186,7 +186,7 @@ export default function Home() {
           </div>
           <div>
             <Image
-              src="/gallery/3.jpg"
+              src="https://res.cloudinary.com/neo-frames/image/upload/v1654117527/gallery/3_rpuy1r.jpg"
               layout="responsive"
               height={`100vh`}
               width={`100vw`}
@@ -195,7 +195,7 @@ export default function Home() {
           </div>
           <div>
             <Image
-              src="/gallery/4.jpg"
+              src="https://res.cloudinary.com/neo-frames/image/upload/v1654117526/gallery/4_owb9vf.jpg"
               layout="responsive"
               height={`100vh`}
               width={`100vw`}
@@ -204,7 +204,7 @@ export default function Home() {
           </div>
           <div>
             <Image
-              src="/gallery/5.jpg"
+              src="https://res.cloudinary.com/neo-frames/image/upload/v1654117527/gallery/5_qg0fx0.jpg"
               layout="responsive"
               height={`100vh`}
               width={`100vw`}
@@ -213,7 +213,7 @@ export default function Home() {
           </div>
           <div>
             <Image
-              src="/gallery/6.jpg"
+              src="https://res.cloudinary.com/neo-frames/image/upload/v1654117528/gallery/6_iccti2.jpg"
               layout="responsive"
               height={`100vh`}
               width={`100vw`}
@@ -222,7 +222,7 @@ export default function Home() {
           </div>
           <div>
             <Image
-              src="/gallery/7.jpg"
+              src="https://res.cloudinary.com/neo-frames/image/upload/v1654117531/gallery/7_bry1rc.jpg"
               layout="responsive"
               height={`100vh`}
               width={`100vw`}
@@ -231,7 +231,7 @@ export default function Home() {
           </div>
           <div>
             <Image
-              src="/gallery/8.jpg"
+              src="https://res.cloudinary.com/neo-frames/image/upload/v1654117528/gallery/8_x8ll7s.jpg"
               layout="responsive"
               height={`100vh`}
               width={`100vw`}
@@ -240,7 +240,7 @@ export default function Home() {
           </div>
           <div>
             <Image
-              src="/gallery/9.jpg"
+              src="https://res.cloudinary.com/neo-frames/image/upload/v1654117526/gallery/9_xdjqji.jpg"
               layout="responsive"
               height={`100vh`}
               width={`100vw`}
@@ -249,7 +249,7 @@ export default function Home() {
           </div>
           <div>
             <Image
-              src="/gallery/10.jpg"
+              src="https://res.cloudinary.com/neo-frames/image/upload/v1654117528/gallery/10_aqb22c.jpg"
               layout="responsive"
               height={`100vh`}
               width={`100vw`}
@@ -258,7 +258,7 @@ export default function Home() {
           </div>
           <div>
             <Image
-              src="/gallery/11.jpg"
+              src="https://res.cloudinary.com/neo-frames/image/upload/v1654117526/gallery/11_gbbu62.jpg"
               layout="responsive"
               height={`100vh`}
               width={`100vw`}
@@ -267,7 +267,7 @@ export default function Home() {
           </div>
           <div>
             <Image
-              src="/gallery/12.jpg"
+              src="https://res.cloudinary.com/neo-frames/image/upload/v1654117528/gallery/12_jy96fv.jpg"
               layout="responsive"
               height={`100vh`}
               width={`100vw`}
@@ -286,7 +286,7 @@ export default function Home() {
           <div className="items-center rounded-md border-2 border-dotted border-orange-600 lg:flex  lg:odd:flex-row-reverse">
             <div className="flex-1">
               <img
-                src="/services/s1.jpg"
+                src="https://res.cloudinary.com/neo-frames/image/upload/v1654117529/services/s1_do3arh.jpg"
                 alt="services"
                 loading="lazy"
                 className="h-auto max-w-full"
@@ -308,7 +308,7 @@ export default function Home() {
           <div className="items-center rounded-md border-2 border-dotted border-orange-600 lg:flex  lg:odd:flex-row-reverse">
             <div className="flex-1">
               <img
-                src="/services/s2.jpg"
+                src="https://res.cloudinary.com/neo-frames/image/upload/v1654117530/services/s2_ufabt6.jpg"
                 alt="services"
                 loading="lazy"
                 className="h-auto max-w-full"
@@ -330,7 +330,7 @@ export default function Home() {
           <div className="items-center rounded-md border-2 border-dotted border-orange-600 lg:flex  lg:odd:flex-row-reverse">
             <div className="flex-1">
               <img
-                src="/services/s3.jpg"
+                src="https://res.cloudinary.com/neo-frames/image/upload/v1654117531/services/s3_btdu6n.jpg"
                 alt="services"
                 loading="lazy"
                 className="h-auto max-w-full"
@@ -352,7 +352,7 @@ export default function Home() {
           <div className="items-center rounded-md border-2 border-dotted border-orange-600 lg:flex  lg:odd:flex-row-reverse">
             <div className="flex-1">
               <img
-                src="/services/s4.jpg"
+                src="https://res.cloudinary.com/neo-frames/image/upload/v1654117531/services/s4_pjqjct.jpg"
                 alt="services"
                 loading="lazy"
                 className="h-auto max-w-full"
@@ -374,7 +374,7 @@ export default function Home() {
           <div className="items-center rounded-md border-2 border-dotted border-orange-600 lg:flex  lg:odd:flex-row-reverse">
             <div className="flex-1">
               <img
-                src="/services/s5.jpg"
+                src="https://res.cloudinary.com/neo-frames/image/upload/v1654117529/services/s5_wgovrm.jpg"
                 alt="services"
                 loading="lazy"
                 className="h-auto max-w-full"
@@ -396,7 +396,7 @@ export default function Home() {
           <div className="items-center rounded-md border-2 border-dotted border-orange-600 lg:flex  lg:odd:flex-row-reverse">
             <div className="flex-1">
               <img
-                src="/services/s6.jpg"
+                src="https://res.cloudinary.com/neo-frames/image/upload/v1654117530/services/s6_bmlves.jpg"
                 alt="services"
                 loading="lazy"
                 className="h-auto max-w-full"
@@ -418,7 +418,7 @@ export default function Home() {
           <div className="items-center rounded-md border-2 border-dotted border-orange-600 lg:flex  lg:odd:flex-row-reverse">
             <div className="flex-1">
               <img
-                src="/services/s7.jpg"
+                src="https://res.cloudinary.com/neo-frames/image/upload/v1654117529/services/s7_v4fmxb.jpg"
                 alt="services"
                 loading="lazy"
                 className="h-auto max-w-full"
@@ -440,7 +440,7 @@ export default function Home() {
           <div className="items-center rounded-md border-2 border-dotted border-orange-600 lg:flex  lg:odd:flex-row-reverse">
             <div className="flex-1">
               <img
-                src="/services/s8.jpg"
+                src="https://res.cloudinary.com/neo-frames/image/upload/v1654117529/services/s8_ajt9md.jpg"
                 alt="services"
                 loading="lazy"
                 className="h-auto max-w-full"
