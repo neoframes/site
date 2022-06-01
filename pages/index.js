@@ -1,8 +1,25 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { useRef } from 'react';
+// import SlideShow from '../components/SlideShow';
 
 export default function Home() {
+  // const imgArray = [
+  //   {
+  //     image: '/gallery/1.jpg',
+  //   },
+  //   {
+  //     image: '/gallery/2.jpg',
+  //   },
+
+  //   {
+  //     image: '/gallery/3.jpg',
+  //   },
+  //   {
+  //     image: '/gallery/4.jpg',
+  //   },
+  // ];
+
   const formRef = useRef();
   return (
     <div>
@@ -26,7 +43,7 @@ export default function Home() {
       <main>
         <section className="relative mb-5 h-[70vh] w-full lg:mb-24 lg:h-screen">
           <div className="absolute top-0 left-0 -z-10 h-4/5 w-full bg-black/60 bg-cover bg-right bg-no-repeat lg:h-screen" />
-          <div className="absolute top-0 left-0 -z-20 h-4/5 w-full overflow-hidden bg-[url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=80')] bg-cover bg-right bg-no-repeat lg:h-screen"></div>
+          <div className="absolute top-0 left-0 -z-20 h-4/5 w-full overflow-hidden bg-[url('https://res.cloudinary.com/neo-frames/image/upload/v1654117844/photo-1618221195710-dd6b41faaea6_1_ifaf2c.webp')] bg-cover bg-right bg-no-repeat lg:h-screen"></div>
           {/* <div className="absolute top-0 left-0 -z-20 h-3/5 w-full overflow-hidden bg-[url('https://images.unsplash.com/photo-1613575831056-0acd5da8f085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')] bg-cover bg-right bg-no-repeat lg:h-screen"></div> */}
 
           <nav className="container flex items-center justify-between pt-8">
@@ -139,6 +156,8 @@ export default function Home() {
           </div>
         </section>
       </main>
+      {/* slideShow */}
+      {/* <SlideShow items={imgArray} /> */}
 
       {/* gallery */}
 
