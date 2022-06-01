@@ -23,3 +23,16 @@ a {
     @apply mx-auto max-w-screen-lg px-4;
   }
 }
+.image-container {
+  width: 100%;
+}
+.image-container > div {
+  position: unset !important;
+}
+
+.image-container .image {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}

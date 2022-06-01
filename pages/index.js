@@ -146,7 +146,7 @@ export default function Home() {
         <h2 className="mb-10 text-center text-3xl">
           Our <span className="text-orange-600">Gallery</span>
         </h2>
-        <div className="grid grid-rows-3 gap-4 px-10 md:grid-cols-2 lg:grid-cols-3 lg:px-0">
+        <div className="grid grid-rows-3 gap-4  md:grid-cols-2 lg:grid-cols-3 ">
           <div>
             <Image
               src="/gallery/1.jpg"
@@ -254,6 +254,190 @@ export default function Home() {
               width={`100vw`}
               alt="gallery"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Services */}
+      <section className="container my-20">
+        <h2 className="mb-10 text-center text-3xl">
+          Our <span className="text-orange-600">Services</span>
+        </h2>
+        <div className="grid gap-3  lg:px-40">
+          <div className="items-center rounded-md border-2 border-dotted border-orange-600 lg:flex  lg:odd:flex-row-reverse">
+            <div className="flex-1">
+              <img
+                src="/services/s1.jpg"
+                alt="services"
+                loading="lazy"
+                className="h-auto max-w-full"
+              />
+            </div>
+
+            <div className="flex-1">
+              <h1 className=" px-4 pt-2 text-base font-semibold lg:px-4">
+                3D Interior designs
+              </h1>
+              <br />
+              <h2 className="px-4 pb-3 text-sm">
+                Being one of the leading organizations, we provide 3D interior
+                designing services as per our clients demands.
+              </h2>
+            </div>
+          </div>
+
+          <div className="items-center rounded-md border-2 border-dotted border-orange-600 lg:flex  lg:odd:flex-row-reverse">
+            <div className="flex-1">
+              <img
+                src="/services/s2.jpg"
+                alt="services"
+                loading="lazy"
+                className="h-auto max-w-full"
+              />
+            </div>
+
+            <div className="flex-1">
+              <h1 className=" px-4 pt-2 text-base font-semibold lg:px-4">
+                Commercial Interior Designers
+              </h1>
+              <br />
+              <h2 className="px-4 pb-3 text-sm">
+                We have Commercial interior designers who are expert in
+                decorating your space and customize them.
+              </h2>
+            </div>
+          </div>
+
+          <div className="items-center rounded-md border-2 border-dotted border-orange-600 lg:flex  lg:odd:flex-row-reverse">
+            <div className="flex-1">
+              <img
+                src="/services/s3.jpg"
+                alt="services"
+                loading="lazy"
+                className="h-auto max-w-full"
+              />
+            </div>
+
+            <div className="flex-1">
+              <h1 className=" px-4 pt-2 text-base font-semibold lg:px-4">
+                Elevation Architectural Designers
+              </h1>
+              <br />
+              <h2 className="px-4 pb-3 text-sm">
+                We have expert architectural designers to design the pattern you
+                want so that you get what you want.
+              </h2>
+            </div>
+          </div>
+
+          <div className="items-center rounded-md border-2 border-dotted border-orange-600 lg:flex  lg:odd:flex-row-reverse">
+            <div className="flex-1">
+              <img
+                src="/services/s4.jpg"
+                alt="services"
+                loading="lazy"
+                className="h-auto max-w-full"
+              />
+            </div>
+
+            <div className="flex-1">
+              <h1 className=" px-4 pt-2 text-base font-semibold lg:px-4">
+                False Ceiling Contractors
+              </h1>
+              <br />
+              <h2 className="px-4 pb-3 text-sm">
+                We are one of the best contractors engaged in creating beautiful
+                and high quality false ceilings.
+              </h2>
+            </div>
+          </div>
+
+          <div className="items-center rounded-md border-2 border-dotted border-orange-600 lg:flex  lg:odd:flex-row-reverse">
+            <div className="flex-1">
+              <img
+                src="/services/s5.jpg"
+                alt="services"
+                loading="lazy"
+                className="h-auto max-w-full"
+              />
+            </div>
+
+            <div className="flex-1">
+              <h1 className=" px-4 pt-2 text-base font-semibold lg:px-4">
+                Interior Designers for Modular kitchens
+              </h1>
+              <br />
+              <h2 className="px-4 pb-3 text-sm">
+                We are the best and most skilled service providers to decorate
+                the interiors for modular kitchen.
+              </h2>
+            </div>
+          </div>
+
+          <div className="items-center rounded-md border-2 border-dotted border-orange-600 lg:flex  lg:odd:flex-row-reverse">
+            <div className="flex-1">
+              <img
+                src="/services/s6.jpg"
+                alt="services"
+                loading="lazy"
+                className="h-auto max-w-full"
+              />
+            </div>
+
+            <div className="flex-1">
+              <h1 className=" px-4 pt-2 text-base font-semibold lg:px-4">
+                Wood Workers
+              </h1>
+              <br />
+              <h2 className="px-4 pb-3 text-sm">
+                We have plenty of experienced wood workers that understand your
+                requirements and make wooden furniture for you.
+              </h2>
+            </div>
+          </div>
+
+          <div className="items-center rounded-md border-2 border-dotted border-orange-600 lg:flex  lg:odd:flex-row-reverse">
+            <div className="flex-1">
+              <img
+                src="/services/s7.jpg"
+                alt="services"
+                loading="lazy"
+                className="h-auto max-w-full"
+              />
+            </div>
+
+            <div className="flex-1">
+              <h1 className=" px-4 pt-2 text-base font-semibold lg:px-4">
+                Residence Interior Designers
+              </h1>
+              <br />
+              <h2 className="px-4 pb-3 text-sm">
+                We are professional interior designers offering best designs for
+                Residence at an affordable price.
+              </h2>
+            </div>
+          </div>
+
+          <div className="items-center rounded-md border-2 border-dotted border-orange-600 lg:flex  lg:odd:flex-row-reverse">
+            <div className="flex-1">
+              <img
+                src="/services/s8.jpg"
+                alt="services"
+                loading="lazy"
+                className="h-auto max-w-full"
+              />
+            </div>
+
+            <div className="flex-1">
+              <h1 className=" px-4 pt-2 text-base font-semibold lg:px-4">
+                Pop False Ceiling Contractor
+              </h1>
+              <br />
+              <h2 className="px-4 pb-3 text-sm">
+                Get the contract details of the efficient contractors who are
+                best in interior designing of pop false ceilings.
+              </h2>
+            </div>
           </div>
         </div>
       </section>
