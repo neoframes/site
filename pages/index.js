@@ -29,8 +29,14 @@ export default function Home() {
         </title>
         <meta
           name="description"
-          content="One stop solution for complete building services"
+          content="Neoframes is a professional interior design studio based in Hyderabad. We offer a full range of interior design services, including residential, commercial and industrial design."
         />
+        <meta
+          name="keywords"
+          content="neoframes, neo_frames, architect studio, free consult, affordable pricing,3D rendering,dream spaces,  experienced, 3D interior design, commercial interior design,elevation architectural designers,false ceiling contractors,modular kitchens,wood workers,residence interior designers,pop false ceiling contractor, professional architects, interior design, building services"
+        />
+        <meta name="author" content="Neoframes" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
