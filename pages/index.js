@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRef } from 'react';
 // import SlideShow from '../components/SlideShow';
 
@@ -21,6 +22,10 @@ export default function Home() {
   // ];
 
   const formRef = useRef();
+  const homeRef = useRef();
+  const featuresRef = useRef();
+  const showcaseRef = useRef();
+  const servicesRef = useRef();
   return (
     <div>
       <Head>
@@ -47,7 +52,10 @@ export default function Home() {
       </Head>
 
       <main>
-        <section className="relative mb-5 h-[70vh] w-full lg:mb-24 lg:h-screen">
+        <section
+          ref={homeRef}
+          className="relative mb-5 h-[70vh] w-full lg:mb-24 lg:h-screen"
+        >
           <div className="absolute top-0 left-0 -z-10 h-4/5 w-full bg-black/60 bg-cover bg-right bg-no-repeat lg:h-screen" />
           <div className="absolute top-0 left-0 -z-20 h-4/5 w-full overflow-hidden bg-[url('https://res.cloudinary.com/neo-frames/image/upload/v1654117844/photo-1618221195710-dd6b41faaea6_1_ifaf2c.webp')] bg-cover bg-right bg-no-repeat lg:h-screen"></div>
           {/* <div className="absolute top-0 left-0 -z-20 h-3/5 w-full overflow-hidden bg-[url('https://images.unsplash.com/photo-1613575831056-0acd5da8f085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')] bg-cover bg-right bg-no-repeat lg:h-screen"></div> */}
@@ -87,7 +95,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="container mb-10">
+        <section ref={featuresRef} className="container mb-10">
           <h2 className="mb-10 text-center text-3xl">
             We are <span className="text-orange-600">different</span>
           </h2>
@@ -167,7 +175,7 @@ export default function Home() {
 
       {/* gallery */}
 
-      <section className="container mb-10">
+      <section ref={showcaseRef} className="container mb-10">
         <h2 className="mb-10 text-center text-3xl">
           Our <span className="text-orange-600">Gallery</span>
         </h2>
@@ -284,12 +292,12 @@ export default function Home() {
       </section>
 
       {/* Services */}
-      <section className="container my-20">
+      <section ref={servicesRef} className="container my-20">
         <h2 className="mb-10 text-center text-3xl">
           Our <span className="text-orange-600">Services</span>
         </h2>
         <div className="grid gap-3  lg:px-40">
-          <div className="items-center rounded-md border-2 border-dotted border-orange-600 lg:flex  lg:odd:flex-row-reverse">
+          <div className="items-center rounded-md border-2 border-dotted border-orange-600 md:flex md:odd:flex-row-reverse lg:flex  lg:odd:flex-row-reverse">
             <div className="flex-1">
               <img
                 src="https://res.cloudinary.com/neo-frames/image/upload/v1654117529/services/s1_do3arh.jpg"
@@ -300,18 +308,18 @@ export default function Home() {
             </div>
 
             <div className="flex-1">
-              <h1 className=" px-4 pt-2 text-base font-semibold lg:px-4">
+              <h3 className=" px-4 py-4 text-base font-semibold lg:px-4">
                 3D Interior designs
-              </h1>
-              <br />
-              <h2 className="px-4 pb-3 text-sm">
+              </h3>
+
+              <p className="px-4 pb-4 text-sm">
                 Being one of the leading organizations, we provide 3D interior
                 designing services as per our clients demands.
-              </h2>
+              </p>
             </div>
           </div>
 
-          <div className="items-center rounded-md border-2 border-dotted border-orange-600 lg:flex  lg:odd:flex-row-reverse">
+          <div className="items-center rounded-md border-2 border-dotted border-orange-600 md:flex md:odd:flex-row-reverse lg:flex  lg:odd:flex-row-reverse">
             <div className="flex-1">
               <img
                 src="https://res.cloudinary.com/neo-frames/image/upload/v1654117530/services/s2_ufabt6.jpg"
@@ -322,18 +330,18 @@ export default function Home() {
             </div>
 
             <div className="flex-1">
-              <h1 className=" px-4 pt-2 text-base font-semibold lg:px-4">
+              <h3 className=" px-4 py-4 text-base font-semibold lg:px-4">
                 Commercial Interior Designers
-              </h1>
-              <br />
-              <h2 className="px-4 pb-3 text-sm">
+              </h3>
+
+              <p className="px-4 pb-4 text-sm">
                 We have Commercial interior designers who are expert in
                 decorating your space and customize them.
-              </h2>
+              </p>
             </div>
           </div>
 
-          <div className="items-center rounded-md border-2 border-dotted border-orange-600 lg:flex  lg:odd:flex-row-reverse">
+          <div className="items-center rounded-md border-2 border-dotted border-orange-600 md:flex md:odd:flex-row-reverse lg:flex  lg:odd:flex-row-reverse">
             <div className="flex-1">
               <img
                 src="https://res.cloudinary.com/neo-frames/image/upload/v1654117531/services/s3_btdu6n.jpg"
@@ -344,18 +352,18 @@ export default function Home() {
             </div>
 
             <div className="flex-1">
-              <h1 className=" px-4 pt-2 text-base font-semibold lg:px-4">
+              <h3 className=" px-4 py-4 text-base font-semibold lg:px-4">
                 Elevation Architectural Designers
-              </h1>
+              </h3>
               <br />
-              <h2 className="px-4 pb-3 text-sm">
+              <p className="px-4 pb-4 text-sm">
                 We have expert architectural designers to design the pattern you
                 want so that you get what you want.
-              </h2>
+              </p>
             </div>
           </div>
 
-          <div className="items-center rounded-md border-2 border-dotted border-orange-600 lg:flex  lg:odd:flex-row-reverse">
+          <div className="items-center rounded-md border-2 border-dotted border-orange-600 md:flex md:odd:flex-row-reverse lg:flex  lg:odd:flex-row-reverse">
             <div className="flex-1">
               <img
                 src="https://res.cloudinary.com/neo-frames/image/upload/v1654117531/services/s4_pjqjct.jpg"
@@ -366,18 +374,18 @@ export default function Home() {
             </div>
 
             <div className="flex-1">
-              <h1 className=" px-4 pt-2 text-base font-semibold lg:px-4">
+              <h3 className=" px-4 py-4 text-base font-semibold lg:px-4">
                 False Ceiling Contractors
-              </h1>
-              <br />
-              <h2 className="px-4 pb-3 text-sm">
+              </h3>
+
+              <p className="px-4 pb-4 text-sm">
                 We are one of the best contractors engaged in creating beautiful
                 and high quality false ceilings.
-              </h2>
+              </p>
             </div>
           </div>
 
-          <div className="items-center rounded-md border-2 border-dotted border-orange-600 lg:flex  lg:odd:flex-row-reverse">
+          <div className="items-center rounded-md border-2 border-dotted border-orange-600 md:flex md:odd:flex-row-reverse lg:flex  lg:odd:flex-row-reverse">
             <div className="flex-1">
               <img
                 src="https://res.cloudinary.com/neo-frames/image/upload/v1654117529/services/s5_wgovrm.jpg"
@@ -388,18 +396,18 @@ export default function Home() {
             </div>
 
             <div className="flex-1">
-              <h1 className=" px-4 pt-2 text-base font-semibold lg:px-4">
+              <h3 className=" px-4 py-4 text-base font-semibold lg:px-4">
                 Interior Designers for Modular kitchens
-              </h1>
-              <br />
-              <h2 className="px-4 pb-3 text-sm">
+              </h3>
+
+              <p className="px-4 pb-4 text-sm">
                 We are the best and most skilled service providers to decorate
                 the interiors for modular kitchen.
-              </h2>
+              </p>
             </div>
           </div>
 
-          <div className="items-center rounded-md border-2 border-dotted border-orange-600 lg:flex  lg:odd:flex-row-reverse">
+          <div className="items-center rounded-md border-2 border-dotted border-orange-600 md:flex md:odd:flex-row-reverse lg:flex  lg:odd:flex-row-reverse">
             <div className="flex-1">
               <img
                 src="https://res.cloudinary.com/neo-frames/image/upload/v1654117530/services/s6_bmlves.jpg"
@@ -410,18 +418,18 @@ export default function Home() {
             </div>
 
             <div className="flex-1">
-              <h1 className=" px-4 pt-2 text-base font-semibold lg:px-4">
+              <h3 className=" px-4 py-4 text-base font-semibold lg:px-4">
                 Wood Workers
-              </h1>
-              <br />
-              <h2 className="px-4 pb-3 text-sm">
+              </h3>
+
+              <p className="px-4 pb-4 text-sm">
                 We have plenty of experienced wood workers that understand your
                 requirements and make wooden furniture for you.
-              </h2>
+              </p>
             </div>
           </div>
 
-          <div className="items-center rounded-md border-2 border-dotted border-orange-600 lg:flex  lg:odd:flex-row-reverse">
+          <div className="items-center rounded-md border-2 border-dotted border-orange-600 md:flex md:odd:flex-row-reverse lg:flex  lg:odd:flex-row-reverse">
             <div className="flex-1">
               <img
                 src="https://res.cloudinary.com/neo-frames/image/upload/v1654117529/services/s7_v4fmxb.jpg"
@@ -432,18 +440,18 @@ export default function Home() {
             </div>
 
             <div className="flex-1">
-              <h1 className=" px-4 pt-2 text-base font-semibold lg:px-4">
+              <h3 className=" px-4 py-4 text-base font-semibold lg:px-4">
                 Residence Interior Designers
-              </h1>
-              <br />
-              <h2 className="px-4 pb-3 text-sm">
+              </h3>
+
+              <p className="px-4 pb-4 text-sm">
                 We are professional interior designers offering best designs for
                 Residence at an affordable price.
-              </h2>
+              </p>
             </div>
           </div>
 
-          <div className="items-center rounded-md border-2 border-dotted border-orange-600 lg:flex  lg:odd:flex-row-reverse">
+          <div className="items-center rounded-md border-2 border-dotted border-orange-600 md:flex md:odd:flex-row-reverse lg:flex  lg:odd:flex-row-reverse">
             <div className="flex-1">
               <img
                 src="https://res.cloudinary.com/neo-frames/image/upload/v1654117529/services/s8_ajt9md.jpg"
@@ -454,14 +462,14 @@ export default function Home() {
             </div>
 
             <div className="flex-1">
-              <h1 className=" px-4 pt-2 text-base font-semibold lg:px-4">
+              <h3 className=" px-4 py-4 text-base font-semibold lg:px-4">
                 Pop False Ceiling Contractor
-              </h1>
-              <br />
-              <h2 className="px-4 pb-3 text-sm">
+              </h3>
+
+              <p className="px-4 pb-4 text-sm">
                 Get the contract details of the efficient contractors who are
                 best in interior designing of pop false ceilings.
-              </h2>
+              </p>
             </div>
           </div>
         </div>
@@ -532,15 +540,63 @@ export default function Home() {
           <div className="px-10 lg:px-0">
             <p className="font-semi-bold mb-3">Site</p>
             <ul className="grid gap-3">
-              <li className="text-sm font-light">Home</li>
-              <li className="text-sm font-light">Features</li>
-              <li className="text-sm font-light">Showcase</li>
+              <li className="text-sm font-light">
+                <a
+                  onClick={() => {
+                    homeRef.current.scrollIntoView({
+                      behavior: 'smooth',
+                      block: 'start',
+                    });
+                  }}
+                >
+                  Home
+                </a>
+              </li>
+              <li className="text-sm font-light">
+                <a
+                  onClick={() => {
+                    featuresRef.current.scrollIntoView({
+                      behavior: 'smooth',
+                      block: 'start',
+                    });
+                  }}
+                >
+                  Features
+                </a>
+              </li>
+              <li className="text-sm font-light">
+                <a
+                  onClick={() => {
+                    showcaseRef.current.scrollIntoView({
+                      behavior: 'smooth',
+                      block: 'start',
+                    });
+                  }}
+                >
+                  Showcase
+                </a>
+              </li>
+              <li className="text-sm font-light">
+                <a
+                  onClick={() => {
+                    servicesRef.current.scrollIntoView({
+                      behavior: 'smooth',
+                      block: 'start',
+                    });
+                  }}
+                >
+                  Services
+                </a>
+              </li>
             </ul>
           </div>
           <div className="px-10 lg:px-0">
             <p className="font-semi-bold mb-3">Company</p>
             <ul className="grid gap-3">
-              <li className="text-sm font-light">About</li>
+              <li className="text-sm font-light">
+                <Link href="/about">About</Link>
+              </li>
+
               <li className="text-sm font-light">
                 <span className="mb-2 flex items-center">
                   <span className="font-medium">Find us at</span>
