@@ -7,7 +7,8 @@ export default function About() {
     <div>
       <Head>
         <title>
-          Neoframes - The Architect Studio | Interior Design | Architecture
+          About Us | Neoframes - The Architect Studio | Interior Design |
+          Hyderabad | Vijayawada | Guntur
         </title>
         <meta
           name="description"
@@ -15,10 +16,14 @@ export default function About() {
         />
         <meta
           name="keywords"
-          content="neoframes, neo_frames, architect studio, free consult, affordable pricing,3D rendering,dream spaces,  experienced, 3D interior design, commercial interior design,elevation architectural designers,false ceiling contractors,modular kitchens,wood workers,residence interior designers,pop false ceiling contractor, professional architects, interior design, building services"
+          content="neoframes, neo_frames, architect studio, free consult, home interior design, home interior, home interior colour, best home interior design, house interior design, house interior, modern house interior design, small house interior design, duplex house interior, living room interior design, best interior design, best interior design near me, best interior design in hyderabad, best interior design in vijayawada, best interior design in guntur, office interior design, office interior, small office interior design, modern office interior design, office room interior design, interior design company, interior design company in hyderabad, interior design company in vijayawada, interior design company in guntur, architects near me, architects in hyderabad, architects in vijayawada, architects in guntur, architect office design, best architects near me, best architects in hyderabad, best architects in vijayawada, best architects in guntur, best architects for house design, house planning, home design, best house planning, building planning, building design plan, 3D rendering, 3D architectural rendering, 3D house rendering, 3D interior rendering, commercial interior designers, commercial office rendering, architecture elevation design, false ceiling contractor, wood workers, modular kitchen design, luxury interior design"
         />
+        <meta name="robots" content="index, follow" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
         <meta name="author" content="Neoframes" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
